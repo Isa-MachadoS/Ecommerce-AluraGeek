@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+
+body {
+    font-family: "Modern Antiqua", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    display: flex;
+    background-color: #740001;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: "Modern Antiqua", serif;
+    font-weight: 800;
+    padding: 1rem;
+}
+
+.cabecalho_logo img {
+    width: 3rem;
+    height: 2.2rem;
+    margin-right: 1rem;
+}
+
+.cabecalho_titulo h1 {
+    font-family: "Modern Antiqua", serif;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+
+main.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.container_produtos {
+    flex: 3;
+    margin-right: 0.5rem;
+}
+
+.produtos_titulo {
+    text-align: center;
+    font-weight: 1200;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    max-width: 75%;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 80%;
+}
+
+.produtos_bloco {
+    background-color: #d3a625;
+    padding: 1rem 1rem 0;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+    height: 18rem;
+    box-shadow: 0.8px 8px 16px rgba(0, 0 ,0, 0.4);
+}
+
+.produtos_imagem {
+    width: 8rem;
+    height: 10rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.produtos_descricao {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.produtos_barra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produtos_preco {
+    margin: 0.5rem; 
+}
+
+.produtos_quantidade {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+}
+
+.produtos_descartar {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.indisponivel {
+    color: #740001;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form.input {
+    box-shadow: 1px 8px 16px rgba(0, 0 ,0, 0.6);
+}
+
+.adicionar_produto {
+    flex: 1;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 400px;
+    margin-top: 0;
+    height: fit-content;
+}
+
+.adicionar_produto h2 {
+    font-weight: 1200;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.adicionar_produto div {
+    margin-bottom: 1rem;
+}
+
+.adicionar_produto label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.adicionar_produto input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 0.1rem solid #740001;
+    border-radius: 0.6rem;
+}
+
+.produto_botao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produto_botao button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+    background-color: #740001;
+    color: #fff;
+    cursor: pointer;
+}
+
+.produto_botao button:hover {
+    background-color: #995c5d;
+}
+
+.produto_botao .cancel {
+    background-color: #ccc;
+}
+
+.mensagem {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, display 5s ease;
+}
+
+.mensagem.success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.mensagem.error {
+    background-color: #f44336;
+    color: white;
+}
+
+.mensagem.show {
+    display: block;
+    opacity: 1;
+}
+
+.rodape {
+    background-color: #740001;
+    padding: 2rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.rodape_titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.rodape_titulo img {
+    width: 3rem;
+    height: 2.2rem;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .cabecalho_titulo h1 {
+        font-size: 1.5rem;
+    }
+
+    main.container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_produtos {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0; 
+        margin: 0 auto; 
+    }
+
+    .produtos_titulo {
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+
+    .produtos_bloco {
+        justify-content: center;
+        width: 8rem;
+        height: 16rem;
+    }
+
+    .produtos_imagem {
+        width: 6rem;
+        height: 8rem;
+        border-radius: 0.8rem;
+    }
+
+    .produtos_descricao {
+        font-size: 0.8rem;
+    }
+
+    .adicionar_produto {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rodape {
+        padding: 0.5rem;
+    }
+
+    .rodape_titulo {
+        font-size: 0.8rem;
+    }
+
+    .rodape h2 {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .rodape p {
+        font-size: 0.8rem;
+        font-weight: 200;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cabecalho_titulo h1 {
+        font-size: 1.2rem;
+    }
+
+    .adicionar_produto h2 {
+        font-size: 1.2rem;
+    }
+
+    .adicionar_produto label {
+        font-size: 0.8rem;
+    }
+
+    .produtos_titulo {
+        font-size: 1.2rem;
+    }
+
+    .produtos_bloco {
+        justify-content: center;
+        width: 4rem;
+        height: 12rem;
+    }
+
+    .produtos_imagem {
+        width: 5rem;
+        height: 6rem;
+    }
+
+    .produtos_descricao {
+        font-size: 0.6rem;
+    }
+
+    .produtos_preco {
+        font-size: 0.6rem;
+    }
+
+    .produtos_quantidade {
+        font-size: 0.5rem;
+        margin-right: 0.4rem;
+    }
+
+    .produtos_descartar img {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    .rodape {
+        padding: 0.5rem;
+    }
+
+    .rodape_titulo {
+        font-size: 0.6rem;
+    }
+
+    .rodape h2 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .rodape p {
+        font-size: 0.5rem;
+        font-weight: 200;
+    }
+}
+
+

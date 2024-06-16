@@ -1,0 +1,67 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Boneco Hagrid",
+      "preco": 99,
+      "imagem": "assets/transferir.jpg",
+      "quantidade": 10
+    },
+    {
+      "id": "2",
+      "nome": "Boneco Ron Weasley",
+      "preco": 99,
+      "imagem": "assets/Boneco Funko Pop Harry Potter Ron Weasley 02.jpg",
+      "quantidade": 5
+    },
+    {
+      "id": "3",
+      "nome": "Boneco Voldemort",
+      "preco": 99,
+      "imagem": "assets/Funko Pop! Harry Potter_ Harry Potter- 10&Quot; Voldemort Com Nagini, Multicolor, Modelo_48037.jpg",
+      "quantidade": 0
+    },
+    {
+      "id": "4",
+      "nome": "Boneco Draco Malfoy",
+      "preco": 99,
+      "imagem": "assets/Funko POP Movies_ Harry Potter Action Figure - Draco Malfoy.jpg",
+      "quantidade": 7
+    },
+    {
+      "id": "5",
+      "nome": "Boneco Severus Snape",
+      "preco": 99,
+      "imagem": "assets/Funko POP Movies_ Harry Potter - Severus Snape Action Figure, Multicolor, Standard, (5862).jpg",
+      "quantidade": 2
+    },
+    {
+      "id": "6",
+      "nome": "Boneco Hermione Granger",
+      "preco": 99,
+      "imagem": "assets/Funko Pop Harry Potter_ Hermione Granger.jpg",
+      "quantidade": 4
+    },
+    {
+      "id": "7",
+      "nome": "Boneco Harry Potter",
+      "preco": 99,
+      "imagem": "assets/Funko Pop Edição Harry Potter  e o Prisioneiro de Azkaban gj.jpg",
+      "quantidade": 8
+    },
+    {
+      "id": "8",
+      "nome": "Boneco Professora Minerva",
+      "preco": 99,
+      "imagem": "assets/Funko Announces New Harry Potter Yule Ball Themed Pop! Figures _ RAGE Works.jpg",
+      "quantidade": 1
+    },
+    {
+      "id": "9",
+      "nome": "Boneco Albus Dumbledore",
+      "preco": 99,
+      "imagem": "assets/Best Buy_ Funko POP! Harry Potter_ Albus Dumbledore with Fawkes 48038.jpg",
+      "quantidade": 6
+    }
+  ]
+}
