@@ -11,24 +11,58 @@ body {
     display: flex;
     background-color: #740001;
     align-items: center;
-    text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     font-family: "Modern Antiqua", serif;
     font-weight: 800;
     padding: 1rem;
 }
 
-.cabecalho_logo img {
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #740001;
+    padding: 1rem;
+}
+
+.cabecalho_logo_titulo {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_logo_titulo img {
     width: 3rem;
     height: 2.2rem;
     margin-right: 1rem;
 }
 
-.cabecalho_titulo h1 {
+.cabecalho_logo_titulo h1 {
     font-family: "Modern Antiqua", serif;
     font-weight: 600;
     color: #ffffff;
     margin: 0;
+}
+
+.menu_botao ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.menu_botao ul li {
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.menu_botao a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 main.container {
@@ -216,8 +250,8 @@ form.input {
 }
 
 @media screen and (max-width: 800px) {
-    .cabecalho_titulo h1 {
-        font-size: 1.5rem;
+    .cabecalho_logo_titulo h1 {
+        font-size: 1.8rem;
     }
 
     main.container {
@@ -280,8 +314,12 @@ form.input {
 }
 
 @media screen and (max-width: 500px) {
-    .cabecalho_titulo h1 {
-        font-size: 1.2rem;
+    .cabecalho_logo_titulo h1 {
+        font-size: 1.4rem;
+    }
+
+    .menu_botao {
+        display: none;
     }
 
     .adicionar_produto h2 {
