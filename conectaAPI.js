@@ -1,6 +1,6 @@
 async function getProdutos() {
     try {
-        const response = await fetch(`https://666f8d8cf1e1da2be5230f22.mockapi.io/api/v1/produtos/produtos`);
+        const response = await fetch(`https://666f8d8cf1e1da2be5230f22.mockapi.io/api/v1/produtos`);
         if (!response.ok) {
             throw new Error('Erro ao obter os produtos');
         }
@@ -14,7 +14,7 @@ async function getProdutos() {
 
 async function adicionarProduto(produto) {
     try {
-        const response = await fetch(`https://666f8d8cf1e1da2be5230f22.mockapi.io/api/v1/produtos/produtos`, {
+        const response = await fetch(`https://666f8d8cf1e1da2be5230f22.mockapi.io/api/v1/produtos`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ async function adicionarProduto(produto) {
 
 async function deletarProduto(id) {
     try {
-        const response = await fetch(`https://666f8d8cf1e1da2be5230f22.mockapi.io/api/v1/produtos/produtos/${id}`, {
+        const response = await fetch(`https://666f8d8cf1e1da2be5230f22.mockapi.io/api/v1/produtos/${id}`, {
             method: 'DELETE',
         });
         if (!response.ok) {
