@@ -1,4 +1,4 @@
-const urlBase = 'https://666f8d8cf1e1da2be5230f22.mockapi.io/api/produtos/produtos';
+const urlBase = 'https://my-json-server.typicode.com/Isa-MachadoS/Ecommerce-AluraGeek';
 
 async function getProdutos() {
     try {
