@@ -1,11 +1,6 @@
-//const urlBase = 'http://localhost:3000';
-//execução local do db.jon
-const urlBase = 'https://my-json-server.typicode.com/Isa-MachadoS/Ecommerce-AluraGeek';
-//mock usando My JSON Server, usado apenas para leitura, não tem como alterar os itens do db.json com ele
-
 async function getProdutos() {
     try {
-        const response = await fetch(`${urlBase}/produtos`);
+        const response = await fetch(`https://666f8d8cf1e1da2be5230f22.mockapi.io/api/v1/produtos/produtos`);
         if (!response.ok) {
             throw new Error('Erro ao obter os produtos');
         }
@@ -19,7 +14,7 @@ async function getProdutos() {
 
 async function adicionarProduto(produto) {
     try {
-        const response = await fetch(`${urlBase}/produtos`, {
+        const response = await fetch(`https://666f8d8cf1e1da2be5230f22.mockapi.io/api/v1/produtos/produtos`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -38,7 +33,7 @@ async function adicionarProduto(produto) {
 
 async function deletarProduto(id) {
     try {
-        const response = await fetch(`${urlBase}/produtos/${id}`, {
+        const response = await fetch(`https://666f8d8cf1e1da2be5230f22.mockapi.io/api/v1/produtos/produtos/${id}`, {
             method: 'DELETE',
         });
         if (!response.ok) {
