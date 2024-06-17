@@ -1,4 +1,4 @@
-const urlBase = 'http://localhost:3000';
+const urlBase = 'https://666f8d8cf1e1da2be5230f22.mockapi.io/api/produtos/produtos';
 
 async function getProdutos() {
     try {
